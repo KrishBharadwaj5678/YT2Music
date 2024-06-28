@@ -279,7 +279,7 @@ p.yt-desc{
         font-size: 3.4vw;
     }
     
-     button.convert{
+    button.convert{
         width: 18vw;
         height: 8vw;
     }  
@@ -302,13 +302,14 @@ p.yt-desc{
     
     h2.yt-to-mp3{
         font-size: 5.4vw;
-        line-height: 7.4vw;
+        line-height: 7.6vw;
         margin: 7vw 0vw 4.3vw 0vw;
     }
     
     p.yt-desc{
         font-size: 4vw;
         text-align: center;
+        line-height: 7.4vw;
     }  
 
 }
