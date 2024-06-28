@@ -264,7 +264,7 @@ p.yt-desc{
     
     p.insert-url{
         margin: 0vw 1vw 3vw 0vw;
-        font-size: 3.8vw;
+        font-size: 4vw;
 
     }
     
@@ -275,14 +275,14 @@ p.yt-desc{
     
     input.search{
         width: 56vw;
-        height: 8vw;
+        height: 7vw;
         padding: 0px 17px 0px 18px;
-        font-size: 3.8vw;
+        font-size: 3.5vw;
     }
     
     button.convert{
         width: 18vw;
-        height: 8.4vw;
+        height: 7.3vw;
     }  
 
     p.internet-error{
