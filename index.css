@@ -245,12 +245,12 @@ p.yt-desc{
     }
     
     img.logo{
-        width: 12vw;
-        height: 9vw;
+        width: 13vw;
+        height: 11vw;
     }
     
     h3.web-name{
-        font-size: 4.6vw;
+        font-size: 5vw;
     }
 
     div.main-container{
@@ -302,13 +302,13 @@ p.yt-desc{
     
     h2.yt-to-mp3{
         font-size: 5.4vw;
-        line-height: 7.6vw;
+        line-height: 7.8vw;
         margin: 7vw 0vw 4.3vw 0vw;
     }
     
     p.yt-desc{
         font-size: 4vw;
-        text-align: center;
+        text-align: justify;
         line-height: 7.4vw;
     }  
 
