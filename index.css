@@ -254,7 +254,7 @@ p.yt-desc{
     }
 
     div.main-container{
-        width: 55vw;
+        width: 65vw;
     }
 
     div.main-box{
@@ -264,24 +264,23 @@ p.yt-desc{
     
     p.insert-url{
         margin: 0vw 0vw 3vw 0vw;
-        font-size: 3.7vw;
+        font-size: 4vw;
     }
     
     div.search-part{
         gap: 3.8vw;
         margin: 0vw 1.6vw 0vw 0.8vw;
     }
-
     
     input.search{
-        width: 46vw;
+        width: 56vw;
         height: 7.3vw;
         padding: 0px 17px 0px 18px;
         font-size: 3.4vw;
     }
     
      button.convert{
-        width: 16vw;
+        width: 18vw;
         height: 8vw;
     }  
 
