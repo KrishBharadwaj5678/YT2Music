@@ -1,0 +1,315 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background: #FAFAFA;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+/* It will contain logo,website name etc */
+
+div.top-box{
+    height: 6vw;
+    background-image: linear-gradient(to right,#0ea5e9,#155e75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+div.web{
+    display: flex;
+    align-items: center;
+}
+
+img.logo{
+    width: 8vw;
+    height: 6vw;
+}
+
+h3.web-name{
+    font-size: 2.9vw;
+    color: white;
+    font-family: "Mulish";
+}
+
+/* Parent of main-container */
+
+div.middle-container{
+    display: flex;
+    justify-content: center;
+    margin: 2vw 0vw 0vw 0vw;
+}
+
+/* It will store all necessary information of all divs */
+
+div.main-container{
+    width: 40vw;
+}
+
+/* It will store youtube url and a button */
+
+div.main-box{
+    border-radius: 12px;
+    box-shadow: 0px 3px 10px 0px rgb(179, 174, 174);
+    background: #FFFFFF;
+    padding: 1.5vw 0vw 2vw 0vw;
+    margin: 1vw 0vw 0vw 0vw;
+} 
+
+p.insert-url{
+    margin: 0vw 0vw 2vw 1.6vw;
+    font-size: 1.6vw;
+}
+
+div.search-part{
+    margin: 0vw 1.6vw 0vw 1.6vw;
+    display: flex;
+    gap: 1.3vw;
+}
+
+input.search{
+    width: 30vw;
+    height: 45px;
+    outline: none;
+    outline: 1px solid #E2E2E2;
+    border-radius: 6px;
+    background: #FAFAFA;
+    padding: 0px 15px 0px 10px;
+    border: none;
+    font-size: 1.26vw;
+    color: #917E7E;
+    transition: all 0.5s;
+}
+
+input.search:hover{
+    outline: 1px solid #146987;
+}
+
+button.convert{
+    width: 7vw;
+    height: 45px;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 1.3vw;
+    cursor: pointer;
+    background: #0ea5e9;
+}
+
+/* Output */
+
+div.output{
+    margin: 0vw 0vw 0vw 1.6vw;
+    display: none;
+}
+
+/* Internet Error */
+
+p.internet-error{
+    margin: 2vw 0vw 0vw 0vw;
+    font-size: 1.5vw;
+    text-align: center;
+    display: none;
+
+}
+
+/* Audio Title */
+
+p.audio-title{
+    font-size: 1.3vw;
+    margin: 2vw 1.6vw 1.2vw 0vw;
+    line-height: 2.1vw;
+    display: none;
+}
+
+audio{
+    display: none;
+    margin: auto;
+    width: 18vw;
+}
+
+/* YT TO MP3 */
+
+h2.yt-to-mp3{
+    text-align: center;
+    font-size: 2vw;
+    font-weight: 600;
+    font-family: "Mulish";
+    margin: 2.9vw 0vw 1.5vw 0vw;
+}
+
+p.yt-desc{
+    font-weight: 300;
+    font-family: "Mulish";
+    text-align: justify;
+    font-size: 1.5vw;
+    line-height: 2.4vw;
+}
+
+@media(300px <= width <= 1200px){
+
+    div.top-box{
+        height: 12vw;
+    }
+    
+    img.logo{
+        width: 11vw;
+        height: 8vw;
+    }
+    
+    h3.web-name{
+        font-size: 4.4vw;
+    }
+
+    div.main-container{
+        width: 60vw;
+    }
+    
+    
+    div.main-box{
+        padding: 5vw 0vw 4vw 2.7vw;
+        margin: 9vw 0vw 0vw 0vw;
+        border-radius: 5px;
+    } 
+    
+    p.insert-url{
+        margin: 0vw 0vw 4vw 0vw;
+        font-size: 4.2vw;
+    }
+    
+    div.search-part{
+        gap: 5vw;
+        flex-direction: column;
+    }
+
+    input.search{
+        width: 49vw;
+        height: 9vw;
+        border-radius: 5px;
+        padding: 0px 15px 0px 12px;
+        font-size: 4vw;
+    }
+    
+    button.convert{
+        width: 16.8vw;
+        height: 8.3vw;
+        border-radius: 3px;
+        font-size: 3.4vw;
+    } 
+
+    div.output{
+        margin: 0vw 0vw 0vw 1vw;
+    }
+
+    p.internet-error{
+        margin: 5vw 1vw 0vw 0vw;
+        font-size: 3.8vw;
+        text-align: left;
+    }
+    
+    p.audio-title{
+        font-size: 4vw;
+        margin: 3vw 1.6vw 4vw 0vw;
+        line-height: 5.7vw;
+    }
+    
+    audio{
+        width: 50vw;
+        margin: 0px 0px 0px 0px;
+
+    }
+    
+    h2.yt-to-mp3{
+        font-size: 6vw;
+        line-height: 8.7vw;
+        margin: 7vw 0vw 4vw 0vw;
+    }
+    
+    p.yt-desc{
+        font-size: 5vw;
+        line-height: 7.2vw;
+    } 
+
+}
+
+@media(601px <= width <= 1200px){
+
+    div.top-box{
+        height: 13vw;
+    }
+    
+    img.logo{
+        width: 12vw;
+        height: 9vw;
+    }
+    
+    h3.web-name{
+        font-size: 4.6vw;
+    }
+
+    div.main-container{
+        width: 55vw;
+    }
+
+    div.main-box{
+        padding: 3vw 0vw 3vw 3vw;
+        margin: 6vw 0vw 0vw 0vw;
+    } 
+    
+    p.insert-url{
+        margin: 0vw 0vw 3vw 0vw;
+        font-size: 3.7vw;
+    }
+    
+    div.search-part{
+        gap: 3.8vw;
+        margin: 0vw 1.6vw 0vw 0.8vw;
+    }
+
+    
+    input.search{
+        width: 46vw;
+        height: 7.3vw;
+        padding: 0px 17px 0px 18px;
+        font-size: 3.4vw;
+    }
+    
+     button.convert{
+        width: 16vw;
+        height: 8vw;
+    }  
+
+    p.internet-error{
+        margin: 4vw 1vw 0vw 0vw;
+        font-size: 3.5vw;
+    }
+    
+    p.audio-title{
+        font-size: 3.7vw;
+        margin: 3vw 1.6vw 2vw 0vw;
+        line-height: 5.6vw;
+    }
+    
+    audio{
+        width: 35vw;
+        margin: auto;
+    }
+    
+    h2.yt-to-mp3{
+        font-size: 5.4vw;
+        line-height: 7.4vw;
+        margin: 7vw 0vw 4.3vw 0vw;
+    }
+    
+    p.yt-desc{
+        font-size: 4.1vw;
+    }  
+
+}
