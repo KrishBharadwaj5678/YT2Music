@@ -169,9 +169,8 @@ p.yt-desc{
     }
 
     div.main-container{
-        width: 60vw;
+        width: 65vw;
     }
-    
     
     div.main-box{
         padding: 5vw 0vw 4vw 2.7vw;
@@ -181,7 +180,7 @@ p.yt-desc{
     
     p.insert-url{
         margin: 0vw 0vw 4vw 0vw;
-        font-size: 4.2vw;
+        font-size: 4.5vw;
     }
     
     div.search-part{
@@ -190,7 +189,7 @@ p.yt-desc{
     }
 
     input.search{
-        width: 49vw;
+        width: 54vw;
         height: 9vw;
         border-radius: 5px;
         padding: 0px 15px 0px 12px;
@@ -198,10 +197,10 @@ p.yt-desc{
     }
     
     button.convert{
-        width: 16.8vw;
-        height: 8.3vw;
+        width: 17vw;
+        height: 8.6vw;
         border-radius: 3px;
-        font-size: 3.4vw;
+        font-size: 3.7vw;
     } 
 
     div.output{
@@ -310,6 +309,7 @@ p.yt-desc{
     
     p.yt-desc{
         font-size: 4.1vw;
+        text-align: center;
     }  
 
 }
