@@ -161,26 +161,26 @@ p.yt-desc{
     
     img.logo{
         width: 12vw;
-        height: 9vw;
+        height: 10vw;
     }
     
     h3.web-name{
-        font-size: 4.7vw;
+        font-size: 5vw;
     }
 
     div.main-container{
-        width: 65vw;
+        width: 85vw;
     }
     
     div.main-box{
-        padding: 5vw 0vw 4vw 2.7vw;
+        padding: 5vw 0vw 4vw 5vw;
         margin: 9vw 0vw 0vw 0vw;
         border-radius: 5px;
     } 
     
     p.insert-url{
         margin: 0vw 0vw 4vw 0vw;
-        font-size: 4.5vw;
+        font-size: 5.4vw;
     }
     
     div.search-part{
@@ -189,18 +189,18 @@ p.yt-desc{
     }
 
     input.search{
-        width: 54vw;
-        height: 9vw;
+        width: 68vw;
+        height: 11vw;
         border-radius: 5px;
         padding: 0px 15px 0px 12px;
-        font-size: 4vw;
+        font-size: 4.3vw;
     }
     
     button.convert{
-        width: 17vw;
-        height: 8.6vw;
+        width: 19vw;
+        height: 9vw;
         border-radius: 3px;
-        font-size: 3.7vw;
+        font-size: 4vw;
     } 
 
     div.output{
@@ -209,18 +209,18 @@ p.yt-desc{
 
     p.internet-error{
         margin: 5vw 1vw 0vw 0vw;
-        font-size: 3.8vw;
+        font-size: 4vw;
         text-align: left;
     }
     
     p.audio-title{
-        font-size: 4vw;
-        margin: 3vw 1.6vw 4vw 0vw;
-        line-height: 5.7vw;
+        font-size: 5.2vw;
+        margin: 4vw 1.6vw 4vw 0vw;
+        line-height: 8vw;
     }
     
     audio{
-        width: 50vw;
+        width: 66vw;
         margin: 0px 0px 0px 0px;
 
     }
