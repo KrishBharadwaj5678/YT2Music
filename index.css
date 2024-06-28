@@ -132,7 +132,7 @@ p.audio-title{
 audio{
     display: none;
     margin: auto;
-    width: 18vw;
+    width: 25vw;
 }
 
 /* YT TO MP3 */
@@ -312,5 +312,4 @@ p.yt-desc{
         text-align: justify;
         line-height: 6.8vw;
     }  
-
 }
