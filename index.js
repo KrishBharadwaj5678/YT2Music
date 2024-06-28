@@ -9,13 +9,19 @@ convert.onclick=()=>{
 
     output.style.display="block";
     let data=search.value;
-    let split_url=data.split(/[&?]/);
     let yt_id=null;
-    for (i of split_url){
-        if(i.startsWith("v=")){
-            yt_id=i.substring(2);
-            break
+    if(data.includes("v=")){
+        let split_url=data.split(/[&?]/);
+        for (i of split_url){
+            if(i.startsWith("v=")){
+                yt_id=i.substring(2);
+                break
+            }
         }
+    }
+    else if(data.includes("si=")){
+        let split_url=data.split(/[/?]/);
+        yt_id=split_url[3];
     }
 
     let searchYT=()=>{
@@ -59,12 +65,10 @@ convert.onclick=()=>{
          getAudio()
         }
 
-    if(data.includes("https://www.youtube.com/")){
+    if(data.includes("https://www.youtube.com/") || data.includes("https://youtu.be/")){
         searchYT();
     }
     else{
         alert("Invalid Youtube URL :(")
     }
-
-    
 }
