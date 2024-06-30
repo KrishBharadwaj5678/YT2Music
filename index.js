@@ -96,7 +96,7 @@ convert.onclick=()=>{
          getAudio()
         }
 
-    if(data.includes("youtube") || data.includes("youtu.be") || data.includes("shorts")){
+    if(data.includes("https://www.youtube.com/") || data.includes("https://youtu.be/")){
         searchYT();
     }
     else{
