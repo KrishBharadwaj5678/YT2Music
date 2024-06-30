@@ -40,7 +40,12 @@ convert.onclick=()=>{
     output.style.display="block";
     let data=search.value;
     let yt_id=null;
-    if(data.includes("v=")){
+    if(data.includes("shorts")){
+        let split_url=data.split(/[/]/);
+        yt_id=split_url[4];
+    }
+    
+    else if(data.includes("v=")){
         let split_url=data.split(/[&?]/);
         for (i of split_url){
             if(i.startsWith("v=")){
@@ -53,6 +58,7 @@ convert.onclick=()=>{
         let split_url=data.split(/[/?]/);
         yt_id=split_url[3];
     }
+    
 
     let searchYT=()=>{
 
@@ -68,20 +74,15 @@ convert.onclick=()=>{
         async function getAudio(){
     
             try{
-                if(data.includes("shorts")){
-                 internetError.style.display="block";
-                 internetError.innerText="Shorts Are Not Allowed!";
-                }
-                else{
-                    const response = await fetch(url, options);
-                    const result = await response.json();
-                    internetError.style.display="none";
-                    vid_title.style.display="block"; 
-                    vid_title.innerText=result["title"];
-                    let Total_length=result["adaptiveFormats"].length;
-                    audio.style.display="block";
-                    audio.src=result["adaptiveFormats"][Total_length-1]["url"];
-                }
+                const response = await fetch(url, options);
+                const result = await response.json();
+                internetError.style.display="none";
+                vid_title.style.display="block"; 
+                vid_title.innerText=result["title"];
+                let Total_length=result["adaptiveFormats"].length;
+                audio.style.display="block";
+                audio.src=result["adaptiveFormats"][Total_length-1]["url"];
+                
             }
             catch(err){
                 internetError.style.display="block";
