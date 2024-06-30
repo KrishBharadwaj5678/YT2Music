@@ -96,10 +96,11 @@ convert.onclick=()=>{
          getAudio()
         }
 
-    if(data.includes("https://www.youtube.com/") || data.includes("https://youtu.be/")){
+    if(data.includes("youtube") || data.includes("youtu.be") || data.includes("shorts")){
         searchYT();
     }
     else{
         alert("Invalid Youtube URL :(")
     }
+
 }
