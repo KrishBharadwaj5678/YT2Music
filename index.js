@@ -5,6 +5,36 @@ let output=document.querySelector("div.output");
 let audio=document.querySelector("audio");
 let internetError=document.querySelector("p.internet-error");
 
+// Adding Some GSAP
+let t=gsap.timeline();
+
+t.from("div.top-box,div.web",{
+    y:-70,
+    stagger:0.4,
+    opacity:0
+})
+
+t.from("div.main-box",{
+    opacity:0,
+    x:-300
+})
+
+t.from("p.insert-url,div.search-part",{
+    opacity:0,
+    stagger:0.3,
+    x:-30
+})
+
+t.to("h2.yt-to-mp3",{
+    duration:1.5,
+    text:"YouTube to MP3 Converter"
+})
+
+t.to("p.yt-desc",{
+    duration:3,
+    text:"Our YouTube to MP3 Converter allows you to convert your favorite YouTube videos to MP3 (audio) files and to download them for FREE. YT2Music works on your desktop, tablet and mobile device without the installation of any additional apps. The usage of YT2Music is free, and safe!"
+})
+
 convert.onclick=()=>{
 
     output.style.display="block";
@@ -18,7 +48,7 @@ convert.onclick=()=>{
                 break
             }
         }
-    }
+    }   
     else if(data.includes("si=")){
         let split_url=data.split(/[/?]/);
         yt_id=split_url[3];
