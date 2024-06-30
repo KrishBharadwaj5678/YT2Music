@@ -41,7 +41,8 @@ convert.onclick=()=>{
     let data=search.value;
     let yt_id=null;
     if(data.includes("shorts")){
-        let split_url=data.split(/[/]/);
+        let split_url=data.split(/[/?]/);
+        console.log(split_url);
         yt_id=split_url[4];
     }
     
@@ -96,7 +97,7 @@ convert.onclick=()=>{
          getAudio()
         }
 
-    if(data.includes("https://www.youtube.com/") || data.includes("https://youtu.be/")){
+    if(data.includes("youtube") || data.includes("youtu.be") || data.includes("shorts")){
         searchYT();
     }
     else{
